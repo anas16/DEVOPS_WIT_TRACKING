@@ -6,7 +6,7 @@ using System.Windows.Input;
 
 namespace DEVOPS_V2.View_Models
 {
-    class BaseViewModel : INotifyPropertyChanged
+    internal class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -58,9 +58,13 @@ namespace DEVOPS_V2.View_Models
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
-            var changed = PropertyChanged;
+            PropertyChangedEventHandler changed = PropertyChanged;
 
-            if (changed == null) return;
+            if (changed == null)
+            {
+                return;
+            }
+
             changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 

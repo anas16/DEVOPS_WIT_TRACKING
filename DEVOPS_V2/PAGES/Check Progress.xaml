@@ -34,9 +34,9 @@
             </DataGrid.ColumnHeaderStyle>
             <DataGrid.Columns>
                 <DataGridTextColumn Header="  ID  " Binding="{Binding Id}" Width="auto"/>
+                <DataGridTextColumn Header="  REV  " Binding="{Binding Rev}" Width="auto"/>
                 <DataGridTextColumn Header="  TANGGAL  " Binding="{Binding Fields.SystemCreatedDate}" Width="auto"/>
                 <DataGridTextColumn Header="  JUDUL  " Binding="{Binding Fields.SystemTitle}" Width="130" ElementStyle="{StaticResource WrapText}"/>
-                <DataGridTextColumn Header="  REV  " Binding="{Binding Rev}" Width="auto"/>
                 <DataGridTextColumn Header="  STATUS  " Binding="{Binding Fields.SystemBoardcolumn}" Width="auto"/>
                 <DataGridTextColumn Header="  DESKRIPSI  " Binding="{Binding Fields.SystemDescription}" Width="*" ElementStyle="{StaticResource WrapText}"/>
             </DataGrid.Columns>

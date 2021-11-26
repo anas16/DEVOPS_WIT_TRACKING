@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace DEVOPS_V2.Models {
-    public class GetStart {
-        public class Start_Value {
+namespace DEVOPS_V2.Models
+{
+    public class GetStart
+    {
+        public class Start_Value
+        {
             public string id { get; set; }
             public string name { get; set; }
             public string url { get; set; }
@@ -14,7 +15,8 @@ namespace DEVOPS_V2.Models {
             public string projectId { get; set; }
         }
 
-        public class Start_Root {
+        public class Start_Root
+        {
             public int count { get; set; }
             public List<Start_Value> value { get; set; }
         }
