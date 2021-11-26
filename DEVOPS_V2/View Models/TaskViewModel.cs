@@ -88,6 +88,7 @@ namespace DEVOPS_V2.View_Models
             LoadData.Execute(null);
         }
         #endregion
+        #region Start Auth Task
         private async Task AuthtAsync()
         {
             string url = $"{Model.BaseUrl}/{Model.Organisasi}/_apis/teams?api-version=6.0-preview.3";
@@ -112,7 +113,8 @@ namespace DEVOPS_V2.View_Models
             }
             OnStartChanged?.Invoke(flag);
         }
-
+        #endregion
+        #region Combobox data load
         private async Task LoadComboData()
         {
             if (App.Model.PAT != null)
@@ -139,6 +141,7 @@ namespace DEVOPS_V2.View_Models
                 types.Add(new Types { id = 3, name = "Bug" });
             }
         }
+        #endregion
         #region CREATE WIT TASK
         private async Task ApiPostAsync()
         {
