@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DEVOPS_V2.Models
 {
-    class Uri_var
+    public class Uri_var
     {
         public readonly string BaseUrl = "https://dev.azure.com";
         public readonly string Api_Ver = "api-version=6.0";

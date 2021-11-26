@@ -3,20 +3,24 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:DEVOPS_V2"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Post_Issue">
 
     <Grid Background="White">
-        <TextBox HorizontalAlignment="Left" Margin="10,43,0,0" Text="Judul" TextWrapping="Wrap" VerticalAlignment="Top" Width="521"/>
-        <TextBox HorizontalAlignment="Left" Margin="10,72,0,0" Text="Deskripsikan permasalahan Anda" TextWrapping="Wrap" VerticalAlignment="Top" Width="521" Height="368" AcceptsReturn="True"/>
+
+        <Label Content="Deskripsi" HorizontalAlignment="Left" Margin="20,39,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,70,0,0" Text="{Binding Data.SystemDescription, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" Height="370" AcceptsReturn="True"/>
+
         <StackPanel HorizontalAlignment="Left" Margin="10,8,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+            <Label Content="Judul" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" Margin="10,0,0,0" Text="{Binding Data.SystemTitle, Mode=TwoWay}" TextWrapping="Wrap" Width="225"/>
             <Label Margin="10,0,0,0" Content="Project" Height="26"  FontWeight="Bold"/>
-            <ComboBox Margin="10,0" BorderThickness="0" Height="22" Width="120"/>
+            <ComboBox ItemsSource="{Binding Starts}" SelectedItem="{Binding Start, Mode=TwoWay}" DisplayMemberPath="projectName" SelectedValue="projectId" SelectedIndex="0"  Margin="10,0" BorderThickness="0" Height="22" Width="120"/>
             <Label Margin="10,0,0,0" Content="Type" Height="26"  FontWeight="Bold"/>
-            <ComboBox Margin="10,0" BorderThickness="0" Height="22" Width="120"/>
-            <Button Margin="20,0" BorderThickness="0" Content="Post" Width="80" Height="24" FontWeight="Bold" />
+            <ComboBox ItemsSource="{Binding Types}" SelectedItem="{Binding Type, Mode=TwoWay}" DisplayMemberPath="name" SelectedValue="id" SelectedIndex="0" Margin="10,0" BorderThickness="0" Height="22" Width="120"/>
+            <Button Command="{Binding PostData}" Margin="20,0" BorderThickness="0" Content="Post" Width="80" Height="24" FontWeight="Bold" />
         </StackPanel>
+
     </Grid>
 </Page>

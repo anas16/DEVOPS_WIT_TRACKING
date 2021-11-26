@@ -3,7 +3,8 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:DEVOPS_V2" xmlns:view_models="clr-namespace:DEVOPS_V2.View_Models" d:DataContext="{d:DesignInstance Type=view_models:TaskViewModel}"
+      xmlns:view_models="clr-namespace:DEVOPS_V2.View_Models" 
+      d:DataContext="{d:DesignInstance Type=view_models:TaskViewModel}"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AUTH">
@@ -20,7 +21,7 @@
                 <Label Content="Organisasi" Width="80" Height="25"/>
                 <TextBox x:Name="Text_ORG" Text="{Binding Model.Organisasi, Mode=TwoWay}" BorderThickness="0" Width="300" Height="22" TextWrapping="NoWrap"/>
             </StackPanel>
-            <Button Foreground="White" Background="SteelBlue" Content="Start"  Width="80" Height="30" BorderThickness="0" Margin="0,5" Click="Btn_Click_Menu" FontWeight="Bold" FontSize="14"/>
+            <Button Command="{Binding StartData}" Foreground="White" Background="SteelBlue" Content="Start"  Width="80" Height="30" BorderThickness="0" Margin="0,5" FontWeight="Bold" FontSize="14"/>
         </StackPanel>
     </Grid>
 </Page>
