@@ -21,7 +21,7 @@ namespace DEVOPS_V2
 
         private void Vm_OnUploadSuccess(bool state)
         {
-            var stateMsg = state ? "Upload Success" : "Upload Failed";
+            string stateMsg = state ? "Upload Success" : "Upload Failed";
             MessageBox.Show(stateMsg, "Info", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             vm.Data = new Fields();
         }

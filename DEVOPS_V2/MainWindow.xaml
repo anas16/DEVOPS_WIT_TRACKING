@@ -18,7 +18,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-
         <DockPanel Background="PowderBlue" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0">
             <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="TRACKING PROJECT WORK ITEM" Foreground="White" FontWeight="Bold" FontSize="38" />
         </DockPanel>
@@ -32,8 +31,6 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Frame.RenderTransform>
-
         </Frame>
-
     </Grid>
 </Window>

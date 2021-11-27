@@ -48,11 +48,5 @@ namespace DEVOPS_V2
 
         private readonly TaskViewModel vm;
 
-        //private void Btn_Click_Menu(object sender, RoutedEventArgs e) {
-        //    //Models.Uri_var Cred = new Models.Uri_var {
-        //    //    PAT = Text_PAT.Text,
-        //    //    Organisasi = Text_ORG.Text
-        //    //};
-        //}
     }
 }
