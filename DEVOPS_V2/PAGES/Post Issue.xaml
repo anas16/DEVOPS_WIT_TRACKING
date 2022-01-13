@@ -9,17 +9,17 @@
 
     <Grid Background="White">
 
-        <Label Content="Deskripsi" HorizontalAlignment="Left" Margin="20,39,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,70,0,0" Text="{Binding Data.SystemDescription, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" Height="370" AcceptsReturn="True"/>
+        <Label Content="Deskripsi" HorizontalAlignment="Left" Margin="20,39,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,70,0,0" Text="{Binding Data.SystemDescription, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" Height="370" AcceptsReturn="True" FontSize="14"/>
 
         <StackPanel HorizontalAlignment="Left" Margin="10,8,0,0" Orientation="Horizontal" VerticalAlignment="Top">
-            <Label Content="Judul" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
-            <TextBox HorizontalAlignment="Left" Margin="10,0,0,0" Text="{Binding Data.SystemTitle, Mode=TwoWay}" TextWrapping="Wrap" Width="225"/>
-            <Label Margin="10,0,0,0" Content="Project" Height="26"  FontWeight="Bold"/>
-            <ComboBox ItemsSource="{Binding Starts}" SelectedItem="{Binding Start, Mode=TwoWay}" DisplayMemberPath="projectName" SelectedValue="projectId" SelectedIndex="0"  Margin="10,0" BorderThickness="0" Height="22" Width="120"/>
-            <Label Margin="10,0,0,0" Content="Type" Height="26"  FontWeight="Bold"/>
-            <ComboBox ItemsSource="{Binding Types}" SelectedItem="{Binding Type, Mode=TwoWay}" DisplayMemberPath="name" SelectedValue="id" SelectedIndex="0" Margin="10,0" BorderThickness="0" Height="22" Width="120"/>
-            <Button Command="{Binding PostData}" Margin="20,0" BorderThickness="0" Content="Post" Width="80" Height="24" FontWeight="Bold" />
+            <Label Content="Judul" HorizontalAlignment="Left" Height="30" FontWeight="Bold" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <TextBox HorizontalAlignment="Left" Margin="10,0,0,0" Text="{Binding Data.SystemTitle, Mode=TwoWay}" TextWrapping="Wrap" Width="215" FontSize="14"/>
+            <Label Margin="10,0,0,0" Content="Project" Height="30"  FontWeight="Bold" FontSize="14"/>
+            <ComboBox ItemsSource="{Binding Starts}" SelectedItem="{Binding Start, Mode=TwoWay}" DisplayMemberPath="projectName" SelectedValue="projectId" SelectedIndex="0"  Margin="10,0" BorderThickness="0" Height="22" Width="120" FontSize="14"/>
+            <Label Margin="10,0,0,0" Content="Type" Height="30"  FontWeight="Bold" FontSize="14"/>
+            <ComboBox ItemsSource="{Binding Types}" SelectedItem="{Binding Type, Mode=TwoWay}" DisplayMemberPath="name" SelectedValue="id" SelectedIndex="0" Margin="10,0" BorderThickness="0" Height="22" Width="120" FontSize="14"/>
+            <Button Command="{Binding PostData}" Margin="20,0" BorderThickness="0" Content="Post" Width="80" Height="24" FontWeight="Bold" FontSize="14" />
         </StackPanel>
 
     </Grid>

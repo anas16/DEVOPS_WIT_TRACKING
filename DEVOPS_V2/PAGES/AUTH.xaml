@@ -10,18 +10,18 @@
       Title="AUTH">
 
     <Grid Background="WhiteSmoke">
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical" Height="202">
             <Label HorizontalAlignment="Center" Content="SELAMAT DATANG PADA APLIKASI TRACKING PROGRESS WORK ITEM" FontSize="20" FontWeight="Bold" Height="42"/>
             <Label HorizontalAlignment="Center" Content="Untuk memulai, masukkan token dan nama organisasi lalu tekan Start" FontSize="20" FontWeight="Bold" Height="42"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="center" >
-                <Label Content="Token (PAT)" Width="80" Height="25"/>
+                <Label Content="Token (PAT)" Width="100" Height="35" FontSize="18"/>
                 <TextBox x:Name="Text_PAT" Text="{Binding Model.PAT, Mode=TwoWay}" BorderThickness="0" Width="300" Height="22" TextWrapping="NoWrap"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="center" >
-                <Label Content="Organisasi" Width="80" Height="25"/>
+                <Label Content="Organisasi" Width="100" Height="35" FontSize="18"/>
                 <TextBox x:Name="Text_ORG" Text="{Binding Model.Organisasi, Mode=TwoWay}" BorderThickness="0" Width="300" Height="22" TextWrapping="NoWrap"/>
             </StackPanel>
-            <Button Command="{Binding StartData}" Foreground="White" Background="SteelBlue" Content="Start"  Width="80" Height="30" BorderThickness="0" Margin="0,5" FontWeight="Bold" FontSize="14"/>
+            <Button Command="{Binding StartData}" Foreground="White" Background="SteelBlue" Content="Start"  Width="80" Height="35" BorderThickness="0" Margin="0,5" FontWeight="Bold" FontSize="18"/>
         </StackPanel>
     </Grid>
 </Page>

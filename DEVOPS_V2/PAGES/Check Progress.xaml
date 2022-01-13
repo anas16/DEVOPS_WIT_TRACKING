@@ -24,10 +24,10 @@
         </ResourceDictionary>
     </Page.Resources>
     <Grid Background="White">
-        <DataGrid x:Name="dataGrid" ItemsSource="{Binding Collection, Mode=TwoWay}" SelectedItem="{Binding Data, Mode=TwoWay}" SelectedCellsChanged="dataGrid_SelectedCellsChanged" GridLinesVisibility="Horizontal" HorizontalAlignment="Center" Height="385" Margin="0,55,0,0" VerticalAlignment="Top" Width="800" BorderBrush="{x:Null}" SelectionChanged="dataGrid_SelectionChanged">
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding Collection, Mode=TwoWay}" SelectedItem="{Binding Data, Mode=TwoWay}" SelectedCellsChanged="dataGrid_SelectedCellsChanged" GridLinesVisibility="Horizontal" HorizontalAlignment="Center" Height="385" Margin="0,55,0,0" VerticalAlignment="Top" Width="800" BorderBrush="{x:Null}" SelectionChanged="dataGrid_SelectionChanged" FontSize="14">
             <DataGrid.ColumnHeaderStyle>
                 <Style TargetType="DataGridColumnHeader">
-                    <Setter Property="Background" Value="#69DC143A"/>
+                    <Setter Property="Background" Value="#691466DC"/>
                     <Setter Property="Foreground" Value="#FFFFFF"/>
                     <Setter Property="Height" Value="28"/>
                 </Style>
@@ -42,13 +42,13 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal" Margin="0,0,0,400">
-            <Label HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Content="Project" FontWeight="Bold"/>
-            <ComboBox ItemsSource="{Binding Starts}" SelectedItem="{Binding Start, Mode=TwoWay}" DisplayMemberPath="projectName" SelectedValue="projectId" SelectedIndex="0" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="120" BorderThickness="0"/>
-            <Label HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Content="Team" FontWeight="Bold"/>
-            <ComboBox ItemsSource="{Binding Starts}" SelectedItem="{Binding Start, Mode=TwoWay}" DisplayMemberPath="name" SelectedValue="id" SelectedIndex="0" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="120" BorderThickness="0"/>
-            <Label HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Content="Type" FontWeight="Bold"/>
-            <ComboBox ItemsSource="{Binding Types}" SelectedItem="{Binding Type, Mode=TwoWay}" DisplayMemberPath="name" SelectedValue="id" SelectedIndex="0" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="120" BorderThickness="0"/>
-            <Button Command="{Binding GetData}" HorizontalAlignment="Right" Margin="20,0,0,0" VerticalAlignment="Center" Width="80" Height="30" BorderThickness="0" Content="Check" FontWeight="Bold"/>
+            <Label HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Content="Project" FontWeight="Bold" FontSize="14"/>
+            <ComboBox ItemsSource="{Binding Starts}" SelectedItem="{Binding Start, Mode=TwoWay}" DisplayMemberPath="projectName" SelectedValue="projectId" SelectedIndex="0" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="120" BorderThickness="0" FontSize="14"/>
+            <Label HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Content="Team" FontWeight="Bold" FontSize="14"/>
+            <ComboBox ItemsSource="{Binding Starts}" SelectedItem="{Binding Start, Mode=TwoWay}" DisplayMemberPath="name" SelectedValue="id" SelectedIndex="0" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="120" BorderThickness="0" FontSize="14"/>
+            <Label HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Content="Type" FontWeight="Bold" FontSize="14"/>
+            <ComboBox ItemsSource="{Binding Types}" SelectedItem="{Binding Type, Mode=TwoWay}" DisplayMemberPath="name" SelectedValue="id" SelectedIndex="0" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="120" BorderThickness="0" FontSize="14"/>
+            <Button Command="{Binding GetData}" HorizontalAlignment="Right" Margin="20,0,0,0" VerticalAlignment="Center" Width="80" Height="30" BorderThickness="0" Content="Check" FontWeight="Bold" FontSize="14"/>
         </StackPanel>
     </Grid>
 </Page>

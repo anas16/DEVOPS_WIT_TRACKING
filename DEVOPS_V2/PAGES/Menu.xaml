@@ -14,13 +14,13 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <DockPanel Background="PowderBlue"/>
+        <DockPanel Background="DarkSlateBlue"/>
 
         <StackPanel>
-            <Button Foreground="White" Background="SteelBlue" BorderThickness="0" Height="30" Margin="0,0,0,0" Content="Check Progress" Click="Btn_Check_View" FontWeight="Bold" FontSize="14"/>
-            <Button Foreground="White" Background="SteelBlue" BorderThickness="0" Height="30" Margin="0,10,0,0" Content="Post Issue" Click="Btn_Post_View" FontWeight="Bold" FontSize="14"/>
-            <TextBlock Margin="5,10,5,0" Text="Silakan pilih salah satu menu di atas" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" Foreground="#FFFBFBFB"/>
-            <Button Foreground="White" Background="SteelBlue" BorderThickness="0" Height="30" Margin="0,10,0,0" Content="Back" FontWeight="Bold" FontSize="14" Click="Btn_Click_Main"/>
+            <Button Foreground="White" Background="SteelBlue" BorderThickness="0" Height="35" Margin="0,0,0,0" Content="Check Progress" Click="Btn_Check_View" FontWeight="Bold" FontSize="16"/>
+            <Button Foreground="White" Background="SteelBlue" BorderThickness="0" Height="35" Margin="0,10,0,0" Content="Post Issue" Click="Btn_Post_View" FontWeight="Bold" FontSize="16"/>
+            <TextBlock Margin="5,10,5,0" Text="Silakan pilih salah satu menu di atas" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" Foreground="#FFFBFBFB" FontSize="16"/>
+            <Button Foreground="White" Background="SteelBlue" BorderThickness="0" Height="35" Margin="0,10,0,0" Content="Back" FontWeight="Bold" FontSize="16" Click="Btn_Click_Main"/>
         </StackPanel>
 
         <Frame x:Name="Menu_View" Grid.Column="1" NavigationUIVisibility="Hidden" FontWeight="Bold">
